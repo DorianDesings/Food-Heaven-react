@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 import { COLORS } from '../../constants/colors';
 
+const StyledFlexContainer = styled.div`
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+`;
+
 const StyledFoodCard = styled.div`
 	position: relative;
 	display: flex;
@@ -26,6 +32,7 @@ const StyledFoodCardTitle = styled.h2``;
 const StyledFoodCardText = styled.p``;
 
 export {
+	StyledFlexContainer,
 	StyledFoodCard,
 	StyledFoodCardImage,
 	StyledFoodCardPrice,
