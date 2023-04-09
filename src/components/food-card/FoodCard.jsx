@@ -1,8 +1,15 @@
+import {
+	StyledFoodCard,
+	StyledFoodCardImage,
+	StyledFoodCardPrice
+} from './styles';
+
 const FoodCard = ({ foodImage, selectImage }) => {
 	return (
-		<div onClick={selectImage} style={{ cursor: 'pointer' }}>
-			<img src={foodImage} />
-		</div>
+		<StyledFoodCard onClick={selectImage} style={{ cursor: 'pointer' }}>
+			<StyledFoodCardImage src={foodImage} />
+			<StyledFoodCardPrice>$80</StyledFoodCardPrice>
+		</StyledFoodCard>
 	);
 };
 

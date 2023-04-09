@@ -4,7 +4,6 @@ import { COLORS } from '../../constants/colors';
 const StyledHero = styled.div`
 	position: relative;
 	display: flex;
-	margin-bottom: 2rem;
 	height: 468px;
 	background-color: ${COLORS.lightPrimary};
 
