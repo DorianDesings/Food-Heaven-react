@@ -11,11 +11,11 @@ const firstSection = [
 	},
 	{
 		id: v4(),
-		image: '/assets/images/sushi.png'
+		image: '/assets/images/chinees_noodles.png'
 	},
 	{
 		id: v4(),
-		image: '/assets/images/meat.png'
+		image: '/assets/images/mussel_canvas.png'
 	}
 ];
 

@@ -41,8 +41,4 @@ const Slide = ({ setBannerActive }) => {
 	);
 };
 
-const selectImage = (section, position) => {
-	console.log(homeSlider[section][position].image);
-};
-
 export default Slide;
