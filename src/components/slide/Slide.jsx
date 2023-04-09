@@ -4,7 +4,7 @@ import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { v4 } from 'uuid';
 import FoodCard from '../../components/food-card/FoodCard';
-import { FlexContainer } from '../../components/food-card/styles';
+import { StyledFlexContainer } from '../../components/food-card/styles';
 import { homeSlider } from '../../constants/home-slider';
 import { StyledSlideContainer } from './styles';
 
@@ -23,7 +23,7 @@ const Slide = ({ setBannerActive }) => {
 			>
 				{Object.keys(homeSlider).map(section => (
 					<SwiperSlide key={v4()}>
-						<FlexContainer>
+						<StyledFlexContainer>
 							{homeSlider[section].map((slide, index) => (
 								<FoodCard
 									key={slide.id}
@@ -33,7 +33,7 @@ const Slide = ({ setBannerActive }) => {
 									foodImage={slide.image}
 								/>
 							))}
-						</FlexContainer>
+						</StyledFlexContainer>
 					</SwiperSlide>
 				))}
 			</Swiper>
